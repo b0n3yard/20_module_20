@@ -44,12 +44,14 @@ export default function Contact(){
     return (
         <main>
         <form action="">
-            <input id="name" type="text" name="name" className="border-2 border-black space-y-4" value={inputvalues.name} onChange={handlechange}onBlur={handleblur} onFocus={handlefocus}/>
+            <input id="name" type="text" placeholder="name" name="name" className="border-2 border-black space-y-4" value={inputvalues.name} onChange={handlechange}onBlur={handleblur} onFocus={handlefocus}/>
             <p>{message.name}</p>
-            <input id="email" type="text" name="email"  className="border-2 border-black space-y-4" value={inputvalues.email} onChange={handlechange} onBlur={handleblur} onFocus={handlefocus}/>
+            <input id="email" type="text" name="email" placeholder="email" className="border-2 border-black space-y-4" value={inputvalues.email} onChange={handlechange} onBlur={handleblur} onFocus={handlefocus}/>
             <p>{message.email}</p>
-            <textarea name="message" id="message" className="border-2 border-black space-y-4" value={inputvalues.message}cols="30" rows="10" onChange={handlechange} onBlur={handleblur} onFocus={handlefocus}></textarea>
+            <textarea name="message" id="message" placeholder="message" className="border-2 border-black space-y-4" value={inputvalues.message}cols="30" rows="10" onChange={handlechange} onBlur={handleblur} onFocus={handlefocus}></textarea>
             <p>{message.message}</p>
+            <a href="mailto:michaellklein305@gmail.com?subject =Feedback&body = Message"><button>Submit</button> </a>
+            
 
 
         </form>
